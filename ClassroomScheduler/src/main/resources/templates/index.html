@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en" >
+	<meta charset="UTF-8" />
+	<title>Classroom manager</title>
+	<link rel="stylesheet" href="/main.css" />
+</head>
+<body class="content">
+	<div class="header">
+		<h1>CSO</h1>
+		<h3 align="center">Students/Staff Day-to-Day Classroom Schedule Organizer</h3>
+	</div>
+    <!-- tag::logout[] -->
+    <div class="panel">
+        <div class="welcomemsg">
+        Hello, <span th:text="${#authentication.name}">user</span>.
+        </div>
+        <div class="logout">
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Log Out"/>
+        </form>
+        </div>
+        <br/>
+    </div>
+    <div id="react"></div>
+    <!-- end::logout[] -->
+
+	<div class="footer">© Veera Marisetty - 2017</div>
+    <script src="built/bundle.js"></script>
+
+</body>
+</html>

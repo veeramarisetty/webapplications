@@ -1,0 +1,17 @@
+Classroom Schedule Orgranizer project
+/****************************************/
+
+Technologies Used :
+
+Node
+ReactJS
+Webpack
+Spring Rest
+Hibernate
+Spring Security
+
+links:
+https://www.npmjs.com/package/react-router-role-authorization
+
+
+
